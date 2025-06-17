@@ -70,7 +70,7 @@ Configure the access and secret keys in Jenkins
 Step 4: Writing Terraform Files 
 =======================================================
 <Refer the GitHub Repo for the Terraform Files>
-Repo URL: https://github.com/KastroVKiran/Jenkins-Terraform-EKS.git
+Repo URL:https://github.com/arun-s1337/Terraform-EKS-CI-CD.git
 
 Step 5: Creation of Jenkins Pipeline for Automating EKS Cluster Creation using Terraform
 ====================================================================
@@ -88,7 +88,7 @@ pipeline {
         stage('Clone the Code'){
             steps{
                 script{
-                    checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/KastroVKiran/Jenkins-Terraform-EKS.git']])
+                    checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/arun-s1337/Terraform-EKS-CI-CD.git']])
                 }
             }
         }
